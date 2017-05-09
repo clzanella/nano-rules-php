@@ -1,0 +1,29 @@
+{
+    "name": "evolutionarylabs/nano-rules",
+    "description": "Simplified rule engine for PHP.",
+    "keywords": ["business", "rule", "engine", "constraint"],
+    "homepage": "http://nanorules.com",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Cleber Zanella",
+            "email": "cleber.zanella@gmail.com"
+        }
+    ],
+    
+    "type": "library",
+    
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.1.*"
+    },
+    
+    "autoload": {
+        "classmap": [ "src/" ]
+    },
+    "autoload-dev": {
+        "classmap": [ "tests/" ]
+  }
+}
