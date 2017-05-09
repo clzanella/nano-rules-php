@@ -1,18 +1,22 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace NanoRules\Tests\DtoValidation;
+
+use NanoRules\RulesModule;
+use NanoRules\Tests\DTO\Empresa;
+use NanoRules\Tests\DtoValidation\EmpresaValidator;
 
 /**
  * Description of DefaultModule
  *
- * @author user
+ * @author cleber.zanella
  */
-class DefaultModule {
-    //put your code here
+class DefaultModule extends RulesModule {
+    
+    public function configure() {
+    
+        $this->register(Empresa::class, EmpresaValidator::class, array(RulesModule::Create, RulesModule::Update));
+        
+    }
+
 }
